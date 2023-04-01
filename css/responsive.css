@@ -1,0 +1,367 @@
+@media (min-width:1200px) and (max-width:1399px){
+    #banner .slick-dots {
+        position: absolute;
+        bottom: 200px;
+        left: 40px;
+        text-align: center;
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1199px){
+    #banner .bannerSlider .text h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        color: #1D1D1D;
+        transition-delay: 0.2s;
+    }
+    #banner .slick-dots {
+        position: absolute;
+        bottom: 240px;
+        left: 0px;
+    }
+    #categories .categories-card .overlay {
+        padding-top:55px;
+    }
+    #categories .img-3 .overlay{
+        padding-top: 150px;
+        inset: 20px;
+    }
+    #getUp h2 {
+        font-size: 26px;
+        line-height: 36px;
+        padding-right: 450px;
+    }
+    #getUp p{
+        font-size: 12px;
+    padding-right: 500px;
+    }
+    #getUp a{
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+    #bestSeller .button {
+        margin-left: 360px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    #banner .bannerSlider {
+        height: 500px;
+        
+    }
+    #banner .bannerSlider .row {
+        height: 500px;
+    }
+    #banner .bannerSlider .text h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        color: #1D1D1D;
+        transition-delay: 0.2s;
+    }
+    #banner .bannerSlider .text p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        color: #1D1D1D;
+        margin: 15px 0;
+        transition-delay: 0.4s;
+    }
+    .button {
+        background-color: var(--primarycolor);
+        font-weight: 600;
+        font-size: 14px;
+        color: white;
+        padding: 12px 15px;
+        display: inline-block;
+    }
+    #banner .slick-dots {
+        position: absolute;
+        bottom: 120px;
+        left: 30px;
+    }
+    #banner .bannerSlider .text{
+        margin-top: -10px;
+        width: 45%;
+    }
+    #categories .categories-card .overlay {
+        padding-top: 50px;
+    }
+    
+    #getUp{
+        padding: 20px 0;
+    }
+    #getUp h2{
+    font-size: 14px;
+    line-height: 26px;
+    padding-right: 450px;
+    }
+    #getUp p{
+    font-size: 10px;
+    padding-right: 0;
+    padding-right: 450px;
+    }
+    
+    #getUp .button {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+    
+}
+@media (min-width:320px) and (max-width:767px){
+    #banner .bannerSlider {
+        height: 300px;
+        
+    }
+    #banner .bannerSlider .row {
+        height: 300px;
+    }
+    #banner .bannerSlider .text{
+        margin-top: -80px;
+        width: 100%;
+    }
+    #banner .bannerSlider .text p {
+        font-size: 12px;
+    }
+    #banner .bannerSlider .text h2 {
+        font-size: 16px;
+        line-height: 16px;
+        
+    }
+    #banner .slick-dots {
+        position: absolute;
+        bottom: 40px;
+        left: 100px;
+        text-align: center;
+        background: transparent;
+    }
+    .button {
+        font-size: 12px;
+        color: white;
+        padding: 5px 9px;
+    }
+    #banner .bannerSlider .text h3 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    #banner .slick-dots button{
+        width: 14px;
+        height: 7px;
+    }
+    #categories .categories-card .overlay {
+        padding-top: 50px;
+    }
+    #new_product h2{
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 46px;
+        color: #11161E;
+        text-align: center;
+        padding-bottom: 36px;
+    }
+    #getUp{
+        padding: 20px 0;
+    }
+    #getUp h2{
+    font-size: 16px;
+    padding-right: 20px;
+    }
+    #getUp p{
+    font-size: 10px;
+    padding-right: 0;
+    }
+    #bestSeller h2 {
+        font-size: 25px;
+    }
+    #bestSeller .button {
+        margin-left: 80px;
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+    .deal_slider{
+        width: 100%;
+    }
+    #dealSlider h2{
+    font-size: 25px;
+    text-align: center;
+    }
+    .wrapper .countdown{
+        width: 270px;
+        background-color: white;
+        margin: auto;
+        transform: translateY(-50%);
+        border-radius: 40px;
+        background: #FFFFFF;
+        padding: 5px 0;
+        box-shadow: 0px 0px 10px rgba(21, 26, 50, 0.1);
+    }
+    .wrapper .countdown ul li span{
+    font-size: 14px;
+    }
+    .wrapper .countdown ul li{
+    font-size: 14px;
+    }
+    .wrapper .countdown ul li::after,
+.wrapper .countdown ul li::before{
+    content: " ";
+    position: absolute;
+    right: 0;
+    width: 4px;
+    height: 4px;
+}
+.slick-track{
+    width: 0;
+}
+
+.wrapper .wrapper_card{
+    padding: 0px;
+    left: 0;
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.deal_slider .wrapper_container .wrapper_card h3 {
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 15px;
+  }
+.deal_slider .wrapper_container .wrapper_card h1 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 15px;
+  }
+.deal_slider .wrapper_container .wrapper_card p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #444444;
+    text-align: justify;
+    margin-left: 10px;
+  }
+.deal_slider .wrapper_container .wrapper_card h3 span {
+    text-decoration: line-through;
+  }
+  .deal_slider .wrapper_container .wrapper_card a {
+    font-size: 13px;
+    line-height: 40px;
+    width: 170px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 15px;
+  } 
+  .text {
+    padding-top: 50px;
+    padding-left: 20px;
+}
+#video_section .text h6{
+    font-size: 13px;
+}
+#video_section .text h3{
+    font-size: 20px;
+    line-height: 26px;
+    
+}
+#video_section .text p{
+    font-size: 12px;
+}
+.text a{
+    color: white;
+    margin-bottom: 20px;
+}
+#video_section .video img{
+margin-top: 20px;
+height: 217px;
+}
+#latest{
+    
+    padding-bottom: 70px;
+}
+.aytor_footer{
+    display: none;
+}
+
+.footer_icon{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+.footer_icon .logogroup{
+    text-align: center;
+    padding-top: 30px;
+}
+.footer_icon .payment_system{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer_menu .account_menu h4{
+    text-align: center;
+}
+.footer_menu .account_menu ul li {
+    padding-top: 10px;
+}
+
+.footer_menu .support_menu h4{
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+}
+.footer_menu .OpeningTime_menu h4{
+    text-align: center;
+}
+.footer_menu .OpeningTime_menu .day{
+   text-align: center;
+   padding-top: 10px;
+}
+.contact_Us h4{
+    font-size: 24px;
+    text-align: center;
+}
+.contact_Us .info .icon span {
+    font-size: 14px;
+}
+.contact_Us .info .location a {
+    font-size: 14px;
+}
+.footer_menu .news_letter h4{
+   text-align: center;
+}
+.footer_menu .news_letter p{
+ text-align: left;
+ font-size: 13px;
+ text-align: justify;
+}
+.footer_menu .news_letter form{
+    display: flex;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-left: 70px;
+}
+.footer_menu .news_letter input{
+    padding: 0 5px;
+    width: 100px;
+    font-size: 10px;
+    text-align: center;
+}
+.footer_menu .news_letter button{
+    width: 60px;
+  height: 30px;
+  text-align: center;
+  font-size: 10px;
+  
+}
+#bottom_footer {
+    background-color: #11161ed7;
+    height: 40px;
+  }
+#bottom_footer .bottom p {
+    font-size: 10px;
+    line-height: 35px;
+    text-align: center;
+    color: #f1f1f1;
+    font-family: var(--secondaryFont);
+    padding-top: 0px;
+  }
+}

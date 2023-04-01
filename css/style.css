@@ -1,0 +1,1073 @@
+/* Common CSS Start HERE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,span,p,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primaryfont:'Josefin Sans', sans-serif;
+    --secondaryfont:'Roboto', sans-serif;
+    --primarycolor:#FF6F61;
+}
+
+body{
+    font-family: var(--primaryfont);
+}
+.button{
+    background-color: var(--primarycolor);
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    padding: 19px 37px;
+    display: inline-block;
+}
+
+/* Common CSS Ends HERE */
+/* nav section CSS Start here */
+#Mycustomnav ul li a{
+    font-weight: 400;
+    font-size: 16px;
+    color: #11161E;
+    padding: 45px 22px;
+}
+#Mycustomnav ul li a:hover{
+    color: var(--primarycolor);
+}
+nav .icons ul li{
+    display: inline-block;
+}
+nav .icons ul li a,
+nav .icons ul li span{
+    font-size: 16px;
+    margin: 0 13px;
+    color: #11161E;
+    position: relative;
+}
+nav .icons ul li a .overlay{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    background-color: var(--primarycolor);
+    display: block;
+    border-radius: 50%;
+    padding: 0;
+    margin-left: 20px;
+    color: white;
+    top: -6px;
+    left: -10px;
+    font-size: 10px;
+    text-align: center;
+}
+nav .togglerbutton{
+    border: none;
+    font-size: 25px;
+    outline: none;
+    background: transparent;
+    padding: 0 20px;
+}
+nav #smallmenu .offcanvaslogo{
+    height: 40px;
+}
+nav #smallmenu .smallmenu li a{
+    font-size: 25px;
+    color: #11161E;
+    border-bottom: 1px solid #11161E;
+    display: block;
+    padding: 15px 25px;
+}
+nav #smallmenu .icons{
+    padding: 25px 0;
+    text-align: center;
+    font-size: 15px;
+    
+}
+/* nav section CSS Ends here */
+/* Banner Section CSS Start Here */
+#banner .bannerSlider{
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#banner .bannerSlider .row{
+    height: 800px;
+
+}
+#banner .bannerSlider .text{
+    margin-top: 0px;
+    width: 45%;
+}
+#banner .bannerSlider .text h3{
+    font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+color: #1D1D1D;
+margin: 15px 0;
+}
+#banner .bannerSlider .text h2{
+    font-weight: 700;
+font-size: 64px;
+line-height: 74px;
+color: #1D1D1D;
+transition-delay: 0.2s;
+}
+#banner .bannerSlider .text p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color: #1D1D1D;
+margin: 15px 0;
+transition-delay: 0.4s;
+
+}
+#banner .bannerSlider .text a{
+    transition-delay: 0.8s;
+}
+#banner .bannerSlider .text a:hover{
+    color: #FF6F61;
+    background-color: white;
+    border: 2px solid #FF6F61;
+    border-radius: 10px;
+}
+#banner .bannerSlider .text > * {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+#banner .bannerSlider.slick-active .text > *{
+    transform: translateY(100px);
+    opacity: 1;
+    
+}
+#banner .slick-dots{
+    position: absolute;
+    bottom: 230px;
+    left:70px;
+    margin-left: 100px;
+}
+#banner .slick-dots button{
+    width: 18px;
+    height: 10px    ;
+    border: none;
+    color: transparent;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+#banner .slick-dots li{
+    display: inline-block;
+    margin: 0 5px;
+}
+#banner .slick-dots .slick-active button{
+    width: 30px;
+    background-color: var(--primarycolor);
+}
+/* Banner Section CSS Ends Here */
+/* Categories Section CSS Start */
+#categories{
+    padding-top: 50px;
+}
+#categories .categories-card{
+    position: relative;
+}
+#categories .categories-card img{
+    width: 100%;
+    display: block;
+    
+}
+#categories .categories-card:nth-child(1){
+    margin-bottom: 20px;
+}
+#categories .categories-card .overlay{
+    position: absolute;
+    inset:  10px 20px;
+    background: #11161E;;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    color: white;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+#categories .categories-card .overlaytext{
+    opacity: 100%;
+}
+#categories .img-3 .overlay{
+    inset: 20px;
+}
+#categories .categories-card:hover .overlay{
+    transform: scale(1);
+}
+#categories .categories-card .overlay .button{
+    background-color: transparent;
+}
+/* Categories Section CSS Ends */
+/* New Arrivals Products Section CSS  Star here */
+#new_product{
+    padding: 100px 0;
+    position: relative;
+}
+.product_container{
+    padding: 0 15px;
+}
+#new_product h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    color: #11161E;
+    text-align: center;
+    padding-bottom: 56px;
+}
+.product_card{
+    border: 1px solid #F1F3F4;
+   
+}
+.product_card .product_img img{
+    width: 100%;
+    display: block;
+}
+.product_card .product_info{
+    text-align: center;
+    padding: 25px 0;
+}
+.product_card .product_info p{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 26px;
+   color: #444444;
+}
+.product_card .product_info p span{
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration-line: line-through;
+    color: #BDBDBD;
+}
+.product_card .product_info h4{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #11161E;
+}
+.product_card .product_info span{
+    color: var(--primarycolor);
+}
+.product_card .product_img{
+    position: relative;
+}
+
+.product_card .product_img .overlay{
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+.product_card:hover .product_img .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+.product_card .product_img .overlay ul li a{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 30px;
+    color: #151A32;
+    border-radius: 50%;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+
+}
+
+.product_card .product_img .overlay ul li:hover a{
+    background-color: var(--primarycolor);
+    color: white;
+}
+
+.product_card .product_img ul li{
+    position: relative;
+}
+.product_card .product_img ul li .tooltip_product {
+    position: absolute;
+    left: -135px;
+    top: 5px;
+    background-color: #151A32;
+    width: 130px;
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+    border-radius: 5px;
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+.product_card .product_img ul li:hover .tooltip_product{
+    opacity: 1;
+    visibility: visible;
+}
+.product_card .product_img ul li .tooltip_product::after{
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    background-color: #151A32;
+    transform: rotate(45deg);
+    z-index: -1;
+    
+}
+.product_card .product_img .label{
+    background-color: var(--primarycolor);
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 3px 15px;
+    border-radius: 20px 0 0 20px;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 17px;
+    opacity: 0;
+    visibility: hidden;
+}
+.product_card:hover .product_img .label{
+    opacity: 1;
+    visibility: visible;
+}
+
+#new_product .arrows .right,
+#new_product .arrows .left{
+   position: absolute;
+   width: 30px;
+   height: 50px;
+   display: block;
+   background-color: #151a3234;
+   color: white;
+   line-height: 50px;
+   text-align: center;
+  
+   top: 50%;
+   z-index: 9999;
+}
+#new_product .arrows .left{
+   left: 7%;
+}
+#new_product .arrows .right{
+   right: 7%;
+}
+
+/* New Arrivals Products Section CSS  Ends here */
+/* getUp section CSS Start here */
+#getUp{
+    background: #A6AAB7;
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#getUp h2{
+    font-weight: 700;
+font-size: 36px;
+line-height: 46px;
+padding-right: 500px;
+color: #FFFFFF;
+}
+#getUp p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+padding-right: 690px;
+color: #FFFFFF;
+}
+#getUp a{
+    margin: 20px 0;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+#getUp a:hover{
+    background-color: var(--primarycolor);
+}
+/* getUp section CSS Ends here */
+/* Best Seller Section CSS Start Here */
+#bestSeller{
+    padding: 100px 0;
+    position: relative;
+}
+#bestSeller h2{
+    font-weight: 700;
+font-size: 36px;
+line-height: 46px;
+text-align: center;
+color: #11161E;
+}
+#bestSeller .product_slider{
+    margin: 50px 0;
+}
+
+
+#bestSeller .product_card .product_img{
+    position: relative;
+}
+#bestSeller .product_card .product_img .overlay{
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#bestSeller .product_card:hover .product_img .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+#bestSeller .product_card .product_img .overlay ul{
+    margin-top: 40px;
+}
+#bestSeller .product_card .product_img .overlay li a{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 15px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+}
+#bestSeller .product_card .product_img .overlay a{
+    color: black;
+    font-size: 14px;
+}
+#bestSeller .product_card .product_img .overlay li a:hover{
+    background-color: var(--primarycolor);
+    color: white;
+}
+#bestSeller .product_card .product_img  ul li{
+    position: relative;
+}
+#bestSeller .product_card .product_img  ul li .tooltips{
+    position: absolute;
+    left: -150px;
+    top: 0px;
+    background-color: #11161E;
+    padding: 3px 8px;
+    color: white;
+    width: 135px;
+    padding: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#bestSeller .product_card .product_img  ul li:hover .tooltips{
+    opacity: 1;
+    visibility: visible;
+}
+#bestSeller .button{
+    color: white;
+    text-align: center;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin-left: 450px;
+}
+/* Best Seller Section CSS Ends Here */
+/* Deal Slider CSS section Starts Here */
+#dealSlider{
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#dealSlider h2{
+    font-weight: 700;
+font-size: 36px;
+line-height: 46px;
+text-align: center;
+color: #11161E;
+padding-bottom: 80px;
+}
+.wrapper{
+    background: white;
+    padding: 12px;
+    box-shadow: 0px 0px 70px rgba(21, 26, 50, 0.08);
+    padding-bottom: 100px;
+}
+.wrapper .countdown{
+    width: 424px;
+    background-color: white;
+    margin: auto;
+    transform: translateY(-50%);
+    border-radius: 40px;
+    background: #FFFFFF;
+    padding: 5px 0;
+    box-shadow: 0px 0px 10px rgba(21, 26, 50, 0.1);
+}
+.wrapper .countdown ul{
+    text-align: center;
+}
+.wrapper .countdown ul li{
+    display: inline-block;
+    font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+padding: 0 15px;
+position: relative;
+}
+.wrapper .countdown ul li span{
+    display: block;
+    font-weight: 700;
+font-size: 24px;
+line-height: 34px;
+color: #11161E;
+}
+.wrapper .countdown ul li::after,
+.wrapper .countdown ul li::before{
+    content: " ";
+    position: absolute;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    background-color: var(--primarycolor);
+    border-radius: 50%;
+}
+.wrapper .countdown ul li::before{
+    bottom: 15px;
+}
+.wrapper .countdown ul li::after{
+    top:15px
+}
+.wrapper .countdown ul li:last-child::after,
+.wrapper .countdown ul li:last-child::before{
+    display: none;
+}
+
+.wrapper .slick-dots{
+    position: absolute;
+    bottom: 190px;
+    left:70px;
+    margin-left: 430px;
+    margin-bottom: -250px;
+}
+.wrapper .slick-dots button{
+    width: 18px;
+    height: 10px    ;
+    border: none;
+    color: transparent;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.wrapper .slick-dots ul{
+    padding-top: 300px;
+}
+.wrapper .slick-dots li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.wrapper .slick-dots .slick-active button{
+    width: 30px;
+    background: #151A32;
+}
+.wrapper .deal_slider .wrapper_container .wrapper_card {
+    background-color: #a6aab7;
+  }
+.wrapper_container {
+    padding: 0 30px;
+  }
+  .wrapper_card {
+    padding-left: 40px;
+    padding: 40px 25px;
+  }
+  
+  .deal_slider .wrapper_container .wrapper_card h3 {
+    font-family: var(--primaryFont);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--secondaryColor);
+    padding-bottom: 20px;
+  }
+  .deal_slider .wrapper_container .wrapper_card h1 {
+    font-family: var(--primaryFont);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    color: var(--secondaryColor);
+  }
+  .deal_slider .wrapper_container .wrapper_card p {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #444444;
+    padding: 20px 20px 20px 0px;
+    text-align: justify;
+  }
+  .deal_slider .wrapper_container .wrapper_card h3 span {
+    text-decoration: line-through;
+  }
+  .deal_slider .wrapper_container .wrapper_card a {
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #151a32;
+    width: 200px;
+    height: 60px;
+    margin-top: 40px;
+  }
+  .deal_slider .wrapper_container .wrapper_card .button:hover {
+    color: white;
+    background-color: var(--primarycolor);
+  }
+  .deal_slider {
+    position: relative;
+  }
+/* Deal Slider CSS section Ends Here */
+/* video section CSS start Here */
+#video_section{
+    padding-bottom: 0px;
+    background-color: #F1F3F4;
+}
+.text{
+    padding-top: 60px;
+    padding-left: 80px;
+}
+.text h6{
+    font-size: 16px;
+color: #444444;
+padding-bottom: 10px;
+}
+.text h3{
+    font-size: 36px;
+line-height: 46px;
+color: #11161E;
+padding-right: 100px;
+padding-bottom: 15px;
+}
+.text p{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+padding-right: 60px;
+color: #444444;
+padding-bottom: 20px;
+}
+.text a{
+    color: white;
+}
+.video{
+    position: relative
+}
+.video img{
+    width: 100%;
+    display: block;
+    height: 417px;
+}
+.video .overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%,-50%);
+    color: var(--primarycolor);
+}
+.video .overlay span {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+.video .overlay span::after{
+    content: '';
+    position:absolute;
+    inset: 0;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    animation: ripple 1s linear  infinite ;
+
+}
+@keyframes ripple {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+.video .overlay span a{
+    color: var(--primarycolor);
+}
+.video .overlay span i{
+    margin: 18px -7px 0 0;
+}
+/* video section CSS Ends Here */
+/* Latest news section CSS Start here */
+#latest{
+    padding: 60px 0;
+    padding-bottom: 170px;
+}
+#latest h2{
+    padding: 40px 0;
+    font-size: 36px;
+line-height: 46px;
+text-align: center;
+color: #11161E;
+font-weight: 700;
+}
+.latest_container{
+    padding: 0 15px;
+}
+
+.latest_card{
+    border: 1px solid #F1F3F4;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+}
+.latest_card .latest_img img{
+    width: 100%;
+    display: block;
+}
+
+.latest_card .latest_img{
+    position: relative;
+}
+.latest_card .latest_info h5{
+    padding-top: 30px;
+    font-weight: 600;
+font-size: 16px;
+line-height: 30px;
+color: #11161E;
+}
+.latest_card .latest_info p{
+    font-weight: 400;
+font-size: 13px;
+line-height: 28px;
+color: #444444;
+}
+.latest_card .latest_info a p{
+    display: inline-block;
+    padding-left: 50px;
+}
+.latest_card .latest_info a{
+    font-weight: 600;
+font-size: 13px;
+line-height: 28px;
+color: #444444;
+display: inline-block;
+}
+
+.latest_card .latest_info h5:hover{
+    color: var(--primarycolor);
+}
+.latest_card .latest_info a:hover{
+    color: var(--primarycolor);
+}
+.latest_slider .slick-dots{
+    position: absolute;
+    bottom: 190px;
+    left:70px;
+    margin-left: 430px;
+    margin-bottom: -250px;
+}
+.latest_slider .slick-dots button{
+    width: 18px;
+    height: 10px    ;
+    border: none;
+    color: transparent;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.latest_slider .slick-dots ul{
+    padding-top: 300px;
+}
+.latest_slider .slick-dots li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.latest_slider .slick-dots .slick-active button{
+    width: 30px;
+    background: #151A32;
+}
+/* Latest news section CSS Ends here */
+/* Footer Section Start Here */
+footer{
+    background-color: #11161E;
+}
+
+.aytor_footer .promotion{
+    background: #FFFFFF;
+    margin: auto;
+    transform: translateY(-50%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.aytor_footer .promotion ul li .group{
+    padding-left: 40px;
+}
+.aytor_footer .promotion ul li .back-img{
+    background-color: var(--primarycolor);
+    width: 70px;
+height: 70px;
+line-height: 70px;
+border-radius: 50%;
+text-align: center;
+display: inline-block;
+}
+.aytor_footer .promotion ul li .back_info{
+    text-align: left;
+}
+.aytor_footer .promotion ul li .back_info h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Josefin Sans';
+    color: #11161E;
+}
+.aytor_footer .promotion ul li .back_info p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color: #444444;
+font-family: 'Roboto';
+}
+.aytor_footer .promotion ul {
+    padding-top: 30px;
+    text-align: center;
+  }
+.aytor_footer .promotion ul li {
+    display: inline-block;
+    font-family: var(--primaryFont);
+    font-weight: 600;
+    font-size: 16px;
+    height: 140px;
+    line-height: 140px;
+    color: #11161e;
+    text-transform: capitalize;
+    padding: 10px 10px;
+    position: relative;
+  }
+.aytor_footer .promotion ul li span {
+    font-family: var(--secondaryColor);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+.aytor_footer .promotion ul li span:hover {
+    color: var(--primarycolor);
+    cursor: pointer;
+  }
+  
+.aytor_footer .promotion ul li::after {
+    content: ' ';
+    position: absolute;
+    right: 10px;
+    width: 3px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #dad8d8;
+    top: 0px;
+  }
+
+.aytor_footer .promotion ul li:last-child::after,  
+.aytor_footer .promotion ul li:last-child::before{
+      display: none;
+  }
+  .footer_icon{
+    padding-bottom: 40px;
+  }
+.footer_icon .icongroup ul li{
+    display: inline-block;
+    color: var(--secondaryColor);
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.footer_icon .icongroup ul li:hover{
+    background-color: var(--primarycolor);
+    color: white;
+}
+.footer_icon .logogroup{
+    text-align: center;
+}
+.footer_icon .payment_system{
+    text-align: right;
+    text-align: center;
+}
+.footer_icon .hrdiv{
+    padding-top: 20px;
+    border-bottom: 2px solid white;
+}
+.footer_menu .account_menu h4{
+    font-weight: 700;
+font-size: 24px;
+line-height: 34px;
+color: #FFFFFF;
+padding-bottom: 20px;
+}
+.footer_menu .account_menu ul li a{
+    font-family: 'Roboto';
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color: #FFFFFF;
+}
+.footer_menu .account_menu ul li a:hover{
+    color: var(--primarycolor);
+}
+.footer_menu .support_menu h4{
+    font-weight: 700;
+font-size: 24px;
+line-height: 34px;
+color: #FFFFFF;
+padding-bottom: 20px;
+}
+.footer_menu .support_menu ul li a{
+    font-family: 'Roboto';
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color: #FFFFFF;
+}
+.footer_menu .support_menu ul li a:hover{
+    color: var(--primarycolor);
+}
+.footer_menu .OpeningTime_menu h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+.footer_menu .OpeningTime_menu .day{
+    font-family: 'Roboto';
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color: #FFFFFF;
+margin-bottom: 13px;
+}
+.contact_Us h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+.contact_Us .info{
+    padding-bottom: 15px;
+}
+.contact_Us .info .icon{
+    display: flex;
+    align-items: center;
+}
+.contact_Us .info .icon span{
+    font-size: 24px;
+    color: var(--primarycolor);
+    display: inline-block;
+    line-height: 24px;
+} 
+.contact_Us .info .location a{
+    font-family:"roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: white;
+    display: inline-block;
+}
+.footer_menu .news_letter h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+.footer_menu .news_letter p{
+    font-family: 'Roboto';
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color: #FFFFFF;
+margin-bottom: 13px;
+}
+.footer_menu .news_letter form{
+    display: flex;
+}
+.footer_menu .news_letter input{
+    padding: 0 10px;
+    width: 160px;
+}
+.footer_menu .news_letter button{
+    width: 114px;
+  height: 50px;
+  padding: 0;
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+/* Footer Section Ends Here */
+/* Bottom Section CSS Start */
+#bottom_footer {
+    background-color: #11161ed7;
+    height: 80px;
+  }
+#bottom_footer .bottom p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 35px;
+    text-align: center;
+    color: #f1f1f1;
+    font-family: var(--secondaryFont);
+    padding-top: 20px;
+  }
+#bottom_footer .bottom span {
+    color: var(--primarycolor);
+  }
+#bottom_footer .bottom {
+    margin-left: 40px;
+  }
+/* Bottom Section CSS Ends */
